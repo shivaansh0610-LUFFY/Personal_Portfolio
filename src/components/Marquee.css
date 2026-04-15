@@ -1,0 +1,52 @@
+.marquee-wrapper {
+  background-color: var(--text-primary);
+  color: white;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transform: rotate(-1deg) scale(1.02);
+  margin: 2rem 0 4rem 0;
+  z-index: 10;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  align-items: center;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.separator {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
