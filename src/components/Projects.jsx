@@ -99,7 +99,8 @@ const Projects = () => {
       tags: ['Python Backend', 'React', 'Parquet'],
       image: 'https://via.placeholder.com/600x400/0F172A/FFFFFF?text=TaxiPulse',
       video: '/UrbanTaxi_video.mp4',
-      link: '#'
+      githubLink: 'https://github.com/Prantik-07/URBAN-TAXI-DEMAND-PATTERN-F',
+      liveLink: 'https://urban-taxi-demand-pattern-nn7zolfvs.vercel.app/'
     },
     {
       id: 3,
